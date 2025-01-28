@@ -1,4 +1,5 @@
 import React from "react";
+import "./Accueil.css"
 
 
 const Accueil = () => {
@@ -34,22 +35,41 @@ const Accueil = () => {
           </div>
         </div>
       </section>
-      <section id="apropos ">
+      <section id="apropos">
+        {" "}
         <div className="row shadow p-5 m-5 bg-body rounded ">
           <article className="col-md-6 ">
-            <h2>A Propos</h2>
+            <h2>À propos</h2>
+            <div className="border border-primary border-2 rounded mt-3 mb-4"></div>
+            <p>
+              Passionné par l'informatique et les nouvelles technologies, j'ai
+              suivi une formation d'
+              <strong>intégrateur-développeur web </strong>
+              au CEF. Au cours de cette formation, j'ai pu acquérir des bases
+              solides pour travailler dans le domaine du
+              <strong> développement web</strong>.
+            </p>
+            <p>
+              Basé à Lyon, je suis en recherche d'une alternance au sein d'une
+              agence digitale pour consolider ma formation de
+              <strong> développeur web full stack</strong>.
+            </p>
+            <p>
+              J'accorde une attention particulière à la qualité du code que
+              j'écris et je respecte les bonnes pratiques du web.
+            </p>
           </article>
           <article className="col-md-6 ">
-            <div className=" ">
+            <div>
               <img
                 src="./public/img/john-doe-about.jpg"
                 alt="John Doe"
-                className=" rounded img-fluid"
+                className=" rounded img-fluid mb-2"
               />
               <div>
                 <h2>Mes Compétences</h2>
                 <div className="mb-3">
-                  <p>HTML5 90%</p>
+                  <p className="mb-2">HTML5 90%</p>
                   <div className="progress">
                     <div
                       className="progress-bar bg-danger"
@@ -62,7 +82,7 @@ const Accueil = () => {
                   </div>
                 </div>
                 <div className="mb-3">
-                  <p>CSS 80%</p>
+                  <p className="mb-2">CSS 80%</p>
                   <div className="progress">
                     <div
                       className="progress-bar bg-info"
@@ -75,7 +95,7 @@ const Accueil = () => {
                   </div>
                 </div>
                 <div className="mb-3">
-                  <p>JAVASCRIPT 70%</p>
+                  <p className="mb-2">JAVASCRIPT 70%</p>
                   <div className="progress">
                     <div
                       className="progress-bar bg-warning"
@@ -88,7 +108,7 @@ const Accueil = () => {
                   </div>
                 </div>
                 <div className="mb-3">
-                  <p>PHP 60%</p>
+                  <p className="mb-2">PHP 60%</p>
                   <div className="progress">
                     <div
                       className="progress-bar bg-success"
@@ -101,7 +121,7 @@ const Accueil = () => {
                   </div>
                 </div>
                 <div className="mb-3">
-                  <p>REACT 50%</p>
+                  <p className="mb-2">REACT 50%</p>
                   <div className="progress">
                     <div
                       className="progress-bar bg-primary"
