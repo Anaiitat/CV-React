@@ -13,31 +13,31 @@ const Services = () => {
         <div className="text-center">
           <h1 className="text-uppercase">Mon offre de services</h1>
           <p>Voici les pretations sur lesquelles je peut intervenir.</p>
-          <div className="border-bottom border-primary border-3 w-25 m-auto"></div>
+          <div className="custom-border m-auto"></div>
         </div>
         <div className="row mt-5 text-center justify-content-center">
-          <article className="col-md-4 col-lg-3 shadow-sm  bg-white rounded m-2 p-5 ">
+          <article className="col-md-6 col-lg-3 shadow-sm  bg-white rounded m-2 p-5 ">
             <h3>
               <i class="card fa-solid fa-desktop"></i>
             </h3>
             <h4 className="text-uppercase">Ux Design</h4>
             <p>
-              L’UX Design est une méthode de conception centrée sur
-              l’utilisateur. Son but est d’offrir une expérience de navigation
-              optimale à l’internaute.
+              <strong>L’UX Design </strong>est une méthode de conception centrée
+              sur l’utilisateur. Son but est d’offrir une expérience de
+              navigation optimale à l’internaute.
             </p>
           </article>
-          <article className="col-md-4 col-lg-3 shadow-sm rounded bg-white  m-2 p-5">
+          <article className="col-md-6 col-lg-3 shadow-sm rounded bg-white  m-2 p-5">
             <h3>
               <i class="card fa-solid fa-file-code"></i>
             </h3>
             <h4 className="text-uppercase">Développement Web</h4>
             <p>
-              Le développement de sites web repose sur l’utilisation des
-              langages HTML, CSS, JavaScript et PHP.
+              Le <strong>développement de sites web </strong>repose sur
+              l’utilisation des langages HTML, CSS, JavaScript et PHP.
             </p>
           </article>
-          <article className="col-md-4 col-lg-3 shadow-sm rounded bg-white  m-2 p-5">
+          <article className="col-md-6 col-lg-3 shadow-sm rounded bg-white  m-2 p-5">
             <h3>
               <i class=" card fa-solid fa-magnifying-glass-dollar"></i>
             </h3>
