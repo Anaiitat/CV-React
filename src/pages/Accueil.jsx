@@ -36,6 +36,7 @@ const Accueil = () => {
         </div>
       </section>
       <section id="apropos">
+        {" "}
         <div className="row shadow p-5 m-5 bg-body rounded ">
           <article className="col-md-6 ">
             <h2>À propos</h2>
