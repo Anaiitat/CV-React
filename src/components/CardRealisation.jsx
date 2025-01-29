@@ -45,7 +45,7 @@ function CardRealisation() {
           <img src={realisation.img.src} className="card-img-top" />
           <div className="card-body ">
             <h3 className="card-title">{realisation.name}</h3>
-            <p className="card-text">{realisation.description}</p>
+            <p >{realisation.description}</p>
             <button className="btn btn-outline-primary ">Voir</button>
           </div>
           <div className="card-footer">
