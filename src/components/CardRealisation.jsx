@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import FreshFood from "/public/img/portfolio/fresh-food.jpg";
 import Restaurant from "/public/img/portfolio/restaurant-japonais.jpg";
 import Espace from "/public/img/portfolio/espace-bien-etre.jpg";
@@ -50,7 +49,7 @@ function CardRealisation() {
             <button className="btn btn-outline-primary ">Voir</button>
           </div>
           <div className="card-footer">
-            <small>Site réalisée avec {realisation.technologie}</small>
+            <small>Site réalisé avec {realisation.technologie}</small>
           </div>
         </article>
       ))}
