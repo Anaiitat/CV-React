@@ -16,7 +16,7 @@ const Services = () => {
         <div className="row mt-5 text-center justify-content-center">
           <article className="col-md-6 col-lg-3 shadow-sm  bg-white rounded m-2 p-5 ">
             <h3>
-              <i class="card fa-solid fa-desktop"></i>
+              <i class="card-service fa-solid fa-desktop"></i>
             </h3>
             <h4 className="text-uppercase">Ux Design</h4>
             <p>
@@ -27,7 +27,7 @@ const Services = () => {
           </article>
           <article className="col-md-6 col-lg-3 shadow-sm rounded bg-white  m-2 p-5">
             <h3>
-              <i class="card fa-solid fa-file-code"></i>
+              <i class="card-service fa-solid fa-file-code"></i>
             </h3>
             <h4 className="text-uppercase">Développement Web</h4>
             <p>
@@ -37,7 +37,7 @@ const Services = () => {
           </article>
           <article className="col-md-6 col-lg-3 shadow-sm rounded bg-white  m-2 p-5">
             <h3>
-              <i class=" card fa-solid fa-magnifying-glass-dollar"></i>
+              <i class=" card-service fa-solid fa-magnifying-glass-dollar"></i>
             </h3>
             <h4 className="text-uppercase">Référencement</h4>
             <p>

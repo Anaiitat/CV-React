@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/App.css";
+import CardRealisation from "../components/CardRealisation"
 
 const Realisation = () => {
   return (
@@ -13,11 +13,9 @@ const Realisation = () => {
           <p>Voici quelques-unes de mes réalisations.</p>
           <div className="custom-border m-auto"></div>
         </div>
-        <div className="row mt-5 text-center justify-content-center">
-          <article className="col-md-6 col-lg-3 shadow-sm  bg-white rounded m-2 p-5 "></article>
-          <article className="col-md-6 col-lg-3 shadow-sm  bg-white rounded m-2 p-5 "></article>
-          <article className="col-md-6 col-lg-3 shadow-sm  bg-white rounded m-2 p-5 "></article>
-        </div>
+        
+          <CardRealisation />
+        
       </section>
     </main>
   );
