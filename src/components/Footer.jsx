@@ -1,6 +1,10 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
+
+    const location = useLocation(); 
+
     return (
       <footer className="pt-5">
         <div className="container-fluid px-5">
@@ -28,21 +32,45 @@ const Footer = () => {
             </div>
             <div className="col-lg-3 col-md-6">
               <h5>Liens utiles</h5>
-              <a>
-                <i class="fa-solid fa-chevron-right"></i>vd
-              </a>
-              <a>
-                <i class="fa-solid fa-chevron-right"></i>
-              </a>
-              <a>
-                <i class="fa-solid fa-chevron-right"></i>
-              </a>
-              <a>
-                <i class="fa-solid fa-chevron-right"></i>
-              </a>
-              <a>
-                <i class="fa-solid fa-chevron-right"></i>
-              </a>
+              <ul className="ps-1">
+                <li>
+                  <a>
+                    <i class="fa-solid fa-chevron-right i-chevron"></i> Accueil
+                  </a>
+                </li>
+
+                <li>
+                  <a>
+                    <i class="fa-solid fa-chevron-right i-chevron"></i> A propos
+                  </a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-chevron-right i-chevron"></i>
+                    <Link
+                  to="/services"
+                  className={` ${
+                    location.pathname === "/services"
+                      ? ""
+                      : "text-secondary"
+                  }`}
+                >Services</Link>
+                  <a href="#services">
+                    <i class="fa-solid fa-chevron-right i-chevron"></i> Services
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <i class="fa-solid fa-chevron-right i-chevron"></i> Me
+                    contacter
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <i class="fa-solid fa-chevron-right i-chevron"></i> Mentions
+                    légales
+                  </a>
+                </li>
+              </ul>
             </div>
             <div className="col-lg-3 col-md-6">
               <h5>Mes dernières réalisations</h5>
