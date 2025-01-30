@@ -11,7 +11,7 @@ const Nav = () => {
   return (
     <header>
       <nav
-        className="navbar navbar-expand-lg fixed-top fw-semibold text-uppercase"
+        className="navbar navbar-expand-xl  fw-semibold text-uppercase"
         id="mainNav"
       >
         <div className="container">
