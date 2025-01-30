@@ -34,46 +34,30 @@ const Footer = () => {
               <h5>Liens utiles</h5>
               <ul className="ps-1">
                 <li>
-                  <a>
-                    <i class="fa-solid fa-chevron-right i-chevron"></i> Accueil
-                  </a>
-                </li>
-
-                <li>
-                  <a>
-                    <i class="fa-solid fa-chevron-right i-chevron"></i> A propos
-                  </a>
+                  <i class="fa-solid fa-chevron-right i-chevron"></i>
+                  <Link to="/accueil" className="link"> Accueil</Link>
                 </li>
                 <li>
-                    <i class="fa-solid fa-chevron-right i-chevron"></i>
-                    <Link
-                  to="/services"
-                  className={` ${
-                    location.pathname === "/services"
-                      ? ""
-                      : "text-secondary"
-                  }`}
-                >Services</Link>
-                  <a href="#services">
-                    <i class="fa-solid fa-chevron-right i-chevron"></i> Services
-                  </a>
+                  <i class="fa-solid fa-chevron-right i-chevron"></i>
+                  <Link to="/propos" className="link"> A propos</Link>
                 </li>
                 <li>
-                  <a>
-                    <i class="fa-solid fa-chevron-right i-chevron"></i> Me
-                    contacter
-                  </a>
+                  <i class="fa-solid fa-chevron-right i-chevron"></i>
+                  <Link to="/services" className="link"> Services</Link>
                 </li>
                 <li>
-                  <a>
-                    <i class="fa-solid fa-chevron-right i-chevron"></i> Mentions
-                    légales
-                  </a>
+                  <i class="fa-solid fa-chevron-right i-chevron"></i>
+                  <Link to="/contact" className="link"> Me contacter</Link>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right i-chevron"></i>
+                  <Link to="/mentions" className="link"> Mentions légale</Link>
                 </li>
               </ul>
             </div>
             <div className="col-lg-3 col-md-6">
               <h5>Mes dernières réalisations</h5>
+              
             </div>
             <div className="col-lg-3 col-md-6">
               <h5>Mes derniers articles</h5>

@@ -30,6 +30,11 @@ i{
 
 li{
   list-style: none;
+  text-decoration: none;
+}
+
+.link{
+  color:#1e1e1e;
 }
 
 
