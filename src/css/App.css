@@ -12,12 +12,16 @@ body {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
   color: #444;
-  background-color: #EEE;
+  background-color:white;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   color: #1e1e1e;
+}
+
+footer{
+  background-color:#EEE
 }
 
 i{
@@ -30,11 +34,16 @@ i{
 
 li{
   list-style: none;
-  text-decoration: none;
+  
 }
 
 .link{
   color:#1e1e1e;
+  text-decoration: none;
+}
+
+.i-copyright{
+  color:white;
 }
 
 
