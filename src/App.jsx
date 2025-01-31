@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import Nav from "./Nav";
+import Header from "./components/Header/Header";
 import Accueil from "./pages/Accueil";
 import Services from "./pages/Services";
 import Realisation from "./pages/Realisation";
@@ -12,7 +12,7 @@ import "./css/App.css";
 function App() {
   return (
     <div className="flex">
-      <Nav />
+      <Header />
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="services" element={<Services />} />

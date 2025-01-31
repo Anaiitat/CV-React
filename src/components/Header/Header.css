@@ -1,0 +1,11 @@
+nav{
+  background-color: #1e1e1e;
+}
+.nav-link.active {
+      color: rgb(255, 255, 255) ;
+      background-color: #1e1e1e !important; 
+}
+
+.nav-link:hover{
+    opacity: 0.8;
+}
