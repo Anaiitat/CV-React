@@ -3,7 +3,7 @@ import "../css/Services.css";
 
 const Services = () => {
   return (
-    <main>
+    <main id="services">
       <div className="pt-3">
         <img className="img-fluid " src="./public/img/banner.jpg" />
       </div>

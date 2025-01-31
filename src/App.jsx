@@ -6,6 +6,7 @@ import Realisation from "./pages/Realisation";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Mentions from "./pages/Mentions";
+import Footer from "./components/Footer"
 import "./css/App.css";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="contact" element={<Contact />} />
         <Route path="mentions" element={<Mentions />} />
       </Routes>
+      <Footer/>
     </div>
   );
 }
