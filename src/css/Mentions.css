@@ -1,0 +1,13 @@
+
+
+.accordion-button:not(.collapsed) {
+  color: #0d6efd !important;
+  font-weight: bold;
+  
+}
+
+a{
+    text-decoration: none;
+}
+
+
