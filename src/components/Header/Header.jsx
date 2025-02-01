@@ -1,5 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "../Header/Header.css";
 
 const Header = () => {
@@ -11,8 +13,8 @@ const Header = () => {
       <nav className="navbar navbar-expand-xl  fw-semibold text-uppercase" id="mainNav">
         <div className="container">
           <h1 className="navbar-brand m-0  fs-3 text-light">John Doe</h1>
-          <button class="navbar-toggler border-amber-50 text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="fas fa-bars"></span>
+          <button className="navbar-toggler text-white " type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <FontAwesomeIcon icon={faBars} />
           </button>
           <div className="collapse  nav-pills navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav  nav-pills ms-auto">

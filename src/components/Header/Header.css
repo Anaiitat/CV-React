@@ -9,3 +9,9 @@ nav{
 .nav-link:hover{
     opacity: 0.8;
 }
+
+.navbar-toggler{
+  border: solid 0.5px;
+  border-color: rgb(238,238,238,0.2);
+}
+
