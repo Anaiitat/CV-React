@@ -1,7 +1,7 @@
 import React from "react";
-import FreshFood from "/public/img/portfolio/fresh-food.jpg";
-import Restaurant from "/public/img/portfolio/restaurant-japonais.jpg";
-import Espace from "/public/img/portfolio/espace-bien-etre.jpg";
+import FreshFood from "../img/portfolio/fresh-food.jpg";
+import Restaurant from "../img/portfolio/restaurant-japonais.jpg";
+import Espace from "../img/portfolio/espace-bien-etre.jpg";
 
 function CardRealisation() {
   const realisations = [

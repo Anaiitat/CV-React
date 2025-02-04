@@ -1,11 +1,11 @@
 import React from "react";
 import { useState } from "react";
-import Coder from "/public/img/blog/coder.jpg";
-import Croissance from "/public/img/blog/croissance.jpg";
-import Google from "/public/img/blog/google.jpg";
-import Screens from "/public/img/blog/screens.jpg";
-import Seo from "/public/img/blog/seo.jpg";
-import Technos from "/public/img/blog/technos.png";
+import Coder from "../img/blog/coder.jpg";
+import Croissance from "../img/blog/croissance.jpg";
+import Google from "../img/blog/google.jpg";
+import Screens from "../img/blog/screens.jpg";
+import Seo from "../img/blog/seo.jpg";
+import Technos from "../img/blog/technos.png";
 
 function CardBlog() {
     
