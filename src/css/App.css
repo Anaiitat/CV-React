@@ -12,6 +12,27 @@ h1, h2, h3, h4, h5, h6 {
   color: #1e1e1e;
 }
 
+.banner{
+  background-image: url("src/img/banner.jpg");
+  width: 100%;
+  height: 300px;
+  
+}
+
+@media (max-width: 768px) {
+  .banner {
+      background-image: url("src/img/banner-mobile.jpg");
+      height: 250px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .banner {
+      background-image: url("src/img/banner-tablette.jpg");
+      height: 300px;
+  }
+}
+
 footer{
   background-color:#EEE
 }

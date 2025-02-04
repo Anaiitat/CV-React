@@ -1,6 +1,5 @@
 import React from "react";
 import "./Services.css";
-import Banner from "/src/components/Banner.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDesktop, faFileCode, faMagnifyingGlassDollar } from "@fortawesome/free-solid-svg-icons";
 
@@ -17,7 +16,7 @@ function Service(props) {
 export default function Services() {
   return (
     <main id="services">
-      <Banner />
+      <div className="container-fluid banner"></div>
       <section className="container-fluid  my-5  ">
         <div className="text-center ">
           <h1 className="text-uppercase">Mon offre de services</h1>
