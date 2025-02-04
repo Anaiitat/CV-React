@@ -1,5 +1,5 @@
 import React from "react";
-import "../Accueil/Accueil.css";
+import "./Accueil.css";
 
 const Accueil = () => {
   //Bouton scroll a propos
