@@ -5,6 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    allowedHosts: ["xmwqxc-5173.csb.app"], // Autoriser CodeSandbox
+    allowedHosts: "all", // Autoriser CodeSandbox
     host: true, // Autorise les connexions externes
 }})
