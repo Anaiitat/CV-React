@@ -4,7 +4,7 @@ import Accueil from "./pages/Accueil/Accueil";
 import Services from "./pages/Services/Services";
 import Realisation from "./pages/Realisation";
 import Blog from "./pages/Blog";
-import Contact from "./pages/Contact";
+import Contact from "./pages/Contact/Contact";
 import Mentions from "./pages/Mentions";
 import Footer from "./components/Footer"
 import "./css/App.css";

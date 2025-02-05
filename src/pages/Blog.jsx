@@ -6,7 +6,6 @@ const Blog = () => {
   return (
     <main>
       <div className="banner">
-        
       </div>
       <section className="container my-5">
         <div className="text-center">
