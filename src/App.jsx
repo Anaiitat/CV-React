@@ -6,7 +6,7 @@ import Realisation from "./pages/Realisation";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact/Contact";
 import Mentions from "./pages/Mentions";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer/Footer"
 import "./css/App.css";
 
 function App() {
