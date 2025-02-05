@@ -5,7 +5,7 @@ import Services from "./pages/Services/Services";
 import Realisation from "./pages/Realisation";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact/Contact";
-import Mentions from "./pages/Mentions";
+import Mentions from "./pages/Mentions/Mentions";
 import Footer from "./components/Footer/Footer"
 import "./css/App.css";
 

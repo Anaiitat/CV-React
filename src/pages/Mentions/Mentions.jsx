@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/Mentions.css";
+import "./Mentions.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faMobileButton, faEnvelope, faGlobe } from "@fortawesome/free-solid-svg-icons";
 
