@@ -1,4 +1,6 @@
 import React from "react";
+import { useState, useEffect } from 'react'
+import { ArrowUpCircle } from "react-bootstrap-icons";
 import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faTwitter, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -6,9 +8,27 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { faCopyright } from "@fortawesome/free-regular-svg-icons";
 import "./Footer.css";
 
-const Footer = () => {
 
-    const location = useLocation(); 
+  
+
+const Footer = () =>  {
+  const location = useLocation();
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const toggleVisibility = () => {
+      setIsVisible(window.scrollY > 200);
+    };
+
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
 
     return (
       <footer className="pt-5 mt-5">
@@ -131,6 +151,9 @@ const Footer = () => {
         </div>
         <p className="bg-dark m-0 text-center text-white mt-4 p-3">
           <FontAwesomeIcon icon={faCopyright} className="copyright" /> Designed by John Doe
+          <button className={`btn btn-primary scroll-to-top ${isVisible ? "show" : ""}`} onClick={scrollToTop}>
+            <ArrowUpCircle size={30} />
+          </button>
         </p>
       </footer>
     );
