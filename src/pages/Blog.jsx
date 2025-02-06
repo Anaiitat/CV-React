@@ -5,10 +5,9 @@ const Blog = () => {
 
   return (
     <main>
-      <div className="pt-3">
-        <img className="img-fluid " src="./public/img/banner.jpg" />
+      <div className="banner">
       </div>
-      <section className="container mt-5">
+      <section className="container my-5">
         <div className="text-center">
           <h1 className="text-uppercase">Blog</h1>
           <p>Retrouvez ici quelques articles sur le développement web.</p>

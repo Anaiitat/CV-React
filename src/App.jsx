@@ -1,18 +1,20 @@
 import { Routes, Route } from "react-router-dom";
-import Nav from "./Nav";
-import Accueil from "./pages/Accueil";
-import Services from "./pages/Services";
+import Header from "./components/Header/Header";
+import Accueil from "./pages/Accueil/Accueil";
+import Services from "./pages/Services/Services";
 import Realisation from "./pages/Realisation";
 import Blog from "./pages/Blog";
-import Contact from "./pages/Contact";
-import Mentions from "./pages/Mentions";
-import Footer from "./components/Footer"
-import "./css/App.css";
+import Contact from "./pages/Contact/Contact";
+import Mentions from "./pages/Mentions/Mentions";
+import Footer from "./components/Footer/Footer";
+import Profil from "./components/Profil";
+
+import "./App.css";
 
 function App() {
   return (
     <div className="flex">
-      <Nav />
+      <Header />
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="services" element={<Services />} />
@@ -20,8 +22,9 @@ function App() {
         <Route path="blog" element={<Blog />} />
         <Route path="contact" element={<Contact />} />
         <Route path="mentions" element={<Mentions />} />
+        <Route path="profil" element={<Profil />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
