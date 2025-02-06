@@ -44,8 +44,10 @@ const Footer = () =>  {
                 <p>Téléphone : 06 20 30 40 50</p>
               </address>
               <div>
-                <a href="https://github.com/github-john-doe" rel="nofollow" target="blank" className="p-2 ">
-                  <FontAwesomeIcon icon={faGithub} className="reseaux" />
+                <a rel="nofollow" target="blank" className="p-2 ">
+                  <Link to="/profil" className="link">
+                    <FontAwesomeIcon icon={faGithub} className="reseaux" />
+                  </Link>
                 </a>
                 <a href="https://x.com/?lang=fr" rel="nofollow" target="blank" className="p-2">
                   <FontAwesomeIcon icon={faTwitter} className="reseaux" />

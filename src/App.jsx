@@ -6,7 +6,9 @@ import Realisation from "./pages/Realisation";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact/Contact";
 import Mentions from "./pages/Mentions/Mentions";
-import Footer from "./components/Footer/Footer"
+import Footer from "./components/Footer/Footer";
+import Profil from "./components/Profil";
+
 import "./App.css";
 
 function App() {
@@ -20,8 +22,9 @@ function App() {
         <Route path="blog" element={<Blog />} />
         <Route path="contact" element={<Contact />} />
         <Route path="mentions" element={<Mentions />} />
+        <Route path="profil" element={<Profil />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
