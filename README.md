@@ -67,9 +67,11 @@ Avant d'installer et de lancer ce projet, assurez-vous d'avoir les éléments su
 
 Toutes les pages du projet doivent respecter les normes du W3C. Veuillez fournir des captures d'écran des validateurs HTML et CSS.
 
+
 ## Déploiement
 
 L'application doit être déployée sur CodeSandbox.
+https://codesandbox.io/p/github/Anaiitat/CV-React/main?workspaceId=ws_32NFzXDQP4itu9Hf91Tfzw
 
 ## Auteur
 

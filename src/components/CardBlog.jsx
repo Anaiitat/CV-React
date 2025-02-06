@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import Coder from "../img/blog/coder.jpg";
 import Croissance from "../img/blog/croissance.jpg";
 import Google from "../img/blog/google.jpg";

@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react";
 import { ArrowUpCircle } from "react-bootstrap-icons";
 import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,10 +8,7 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { faCopyright } from "@fortawesome/free-regular-svg-icons";
 import "./Footer.css";
 
-
-  
-
-const Footer = () =>  {
+const Footer = () => {
   const location = useLocation();
 
   const [isVisible, setIsVisible] = useState(false);
@@ -29,137 +26,134 @@ const Footer = () =>  {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  return (
+    <footer className="pt-5 mt-5">
+      <div className="container-fluid ">
+        <div className="row px-5 ">
+          <div className="col-lg-3 col-md-6 ">
+            <h5>John Doe</h5>
+            <address>
+              <p className="m-0">
+                40 Rue Laure Diebold, <br />
+                69009 Lyon, France
+              </p>
+              <p>Téléphone : 06 20 30 40 50</p>
+            </address>
+            <div>
+              <Link to="/profil" className="link p-2" rel="nofollow" target="blank">
+                <FontAwesomeIcon icon={faGithub} className="reseaux" />
+              </Link>
 
-    return (
-      <footer className="pt-5 mt-5">
-        <div className="container-fluid ">
-          <div className="row px-5 ">
-            <div className="col-lg-3 col-md-6 ">
-              <h5>John Doe</h5>
-              <address>
-                <p className="m-0">
-                  40 Rue Laure Diebold, <br />
-                  69009 Lyon, France
-                </p>
-                <p>Téléphone : 06 20 30 40 50</p>
-              </address>
-              <div>
-                <a rel="nofollow" target="blank" className="p-2 ">
-                  <Link to="/profil" className="link">
-                    <FontAwesomeIcon icon={faGithub} className="reseaux" />
-                  </Link>
-                </a>
-                <a href="https://x.com/?lang=fr" rel="nofollow" target="blank" className="p-2">
-                  <FontAwesomeIcon icon={faTwitter} className="reseaux" />
-                </a>
-                <a href="https://www.linkedin.com/feed/" rel="nofollow" target="blank" className="p-2">
-                  <FontAwesomeIcon icon={faLinkedin} className="reseaux" />
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6">
-              <h5>Liens utiles</h5>
-              <ul className="ps-1">
-                <li>
-                  <FontAwesomeIcon icon={faChevronRight} className="chevron" />
-                  <Link to="/" className="link">
-                    {" "}
-                    Accueil
-                  </Link>
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faChevronRight} className="chevron" />
-                  <Link to="/#apropos" className="link">
-                    {" "}
-                    A propos
-                  </Link>
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faChevronRight} className="chevron" />
-                  <Link to="/services" className="link">
-                    {" "}
-                    Services
-                  </Link>
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faChevronRight} className="chevron" />
-                  <Link to="/contact" className="link">
-                    {" "}
-                    Me contacter
-                  </Link>
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faChevronRight} className="chevron" />
-                  <Link to="/mentions" className="link">
-                    {" "}
-                    Mentions légale
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="col-lg-3 col-md-6 ">
-              <h5>Mes dernières réalisations</h5>
-              <ul className="ps-1">
-                <li>
-                  <FontAwesomeIcon icon={faChevronRight} className="chevron" />
-                  <Link to="/realisation" className="link">
-                    {" "}
-                    Fresh food
-                  </Link>
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faChevronRight} className="chevron" />
-                  <Link to="/realisation" className="link">
-                    {" "}
-                    Restaurant Akira
-                  </Link>
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faChevronRight} className="chevron" />
-                  <Link to="/realisation" className="link">
-                    {" "}
-                    Espace bien-être
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="col-lg-3 col-md-6 ">
-              <h5>Mes derniers articles</h5>
-              <ul className="ps-1">
-                <li>
-                  <FontAwesomeIcon icon={faChevronRight} className="chevron" />
-                  <Link to="/blog" className="link">
-                    {" "}
-                    Coder son site en HTML/CSS
-                  </Link>
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faChevronRight} className="chevron" />
-                  <Link to="/blog" className="link">
-                    {" "}
-                    Vendre ses produits sur le web
-                  </Link>
-                </li>
-                <li>
-                  <FontAwesomeIcon icon={faChevronRight} className="chevron" />
-                  <Link to="/blog" className="link">
-                    {" "}
-                    Se positionner sur Google
-                  </Link>
-                </li>
-              </ul>
+              <a href="https://x.com/?lang=fr" rel="nofollow" target="blank" className="p-2">
+                <FontAwesomeIcon icon={faTwitter} className="reseaux" />
+              </a>
+              <a href="https://www.linkedin.com/feed/" rel="nofollow" target="blank" className="p-2">
+                <FontAwesomeIcon icon={faLinkedin} className="reseaux" />
+              </a>
             </div>
           </div>
+          <div className="col-lg-3 col-md-6">
+            <h5>Liens utiles</h5>
+            <ul className="ps-1">
+              <li>
+                <FontAwesomeIcon icon={faChevronRight} className="chevron" />
+                <Link to="/" className="link">
+                  {" "}
+                  Accueil
+                </Link>
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faChevronRight} className="chevron" />
+                <Link to="/#apropos" className="link">
+                  {" "}
+                  A propos
+                </Link>
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faChevronRight} className="chevron" />
+                <Link to="/services" className="link">
+                  {" "}
+                  Services
+                </Link>
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faChevronRight} className="chevron" />
+                <Link to="/contact" className="link">
+                  {" "}
+                  Me contacter
+                </Link>
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faChevronRight} className="chevron" />
+                <Link to="/mentions" className="link">
+                  {" "}
+                  Mentions légale
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="col-lg-3 col-md-6 ">
+            <h5>Mes dernières réalisations</h5>
+            <ul className="ps-1">
+              <li>
+                <FontAwesomeIcon icon={faChevronRight} className="chevron" />
+                <Link to="/realisation" className="link">
+                  {" "}
+                  Fresh food
+                </Link>
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faChevronRight} className="chevron" />
+                <Link to="/realisation" className="link">
+                  {" "}
+                  Restaurant Akira
+                </Link>
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faChevronRight} className="chevron" />
+                <Link to="/realisation" className="link">
+                  {" "}
+                  Espace bien-être
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="col-lg-3 col-md-6 ">
+            <h5>Mes derniers articles</h5>
+            <ul className="ps-1">
+              <li>
+                <FontAwesomeIcon icon={faChevronRight} className="chevron" />
+                <Link to="/blog" className="link">
+                  {" "}
+                  Coder son site en HTML/CSS
+                </Link>
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faChevronRight} className="chevron" />
+                <Link to="/blog" className="link">
+                  {" "}
+                  Vendre ses produits sur le web
+                </Link>
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faChevronRight} className="chevron" />
+                <Link to="/blog" className="link">
+                  {" "}
+                  Se positionner sur Google
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
-        <p className="bg-dark m-0 text-center text-white mt-4 p-3">
-          <FontAwesomeIcon icon={faCopyright} className="copyright" /> Designed by John Doe
-          <button className={`btn btn-primary scroll-to-top ${isVisible ? "show" : ""}`} onClick={scrollToTop}>
-            <ArrowUpCircle size={30} />
-          </button>
-        </p>
-      </footer>
-    );
-
-}
+      </div>
+      <p className="bg-dark m-0 text-center text-white mt-4 p-3">
+        <FontAwesomeIcon icon={faCopyright} className="copyright" /> Designed by John Doe
+        <button className={`btn btn-primary scroll-to-top ${isVisible ? "show" : ""}`} onClick={scrollToTop}>
+          <ArrowUpCircle size={30} />
+        </button>
+      </p>
+    </footer>
+  );
+};
 
 export default Footer;
