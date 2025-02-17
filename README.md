@@ -71,7 +71,7 @@ Toutes les pages du projet doivent respecter les normes du W3C. Veuillez fournir
 ## Déploiement
 
 L'application doit être déployée sur CodeSandbox.
-https://codesandbox.io/p/github/Anaiitat/CV-React/main?workspaceId=ws_32NFzXDQP4itu9Hf91Tfzw
+https://codesandbox.io/invite/ht6wggjdx6pzp5qv
 
 ## Auteur
 
